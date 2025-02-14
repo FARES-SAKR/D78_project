@@ -1,0 +1,9 @@
+// file 1 version 1
+#include <stdio.h>
+
+int main(){
+
+printf("ahhhhhh");
+
+return 0;
+}
