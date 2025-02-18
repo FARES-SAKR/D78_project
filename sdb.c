@@ -66,11 +66,13 @@ void SDB_DeleteEntry(u32 id) {
 				
 			}
 			top -= 1; // then simply decrease top by 1 because the array size has decreased!
+			printf("Student deleted successfully!\n");
 		}
 
 	}
 	else { // no deletion happens if the database still smaller than 4
-		printf("the database must have more than 3 Students to be able to delete an Entry!\n");
+		printf("Can't delete!");
+		printf("The database must have more than 3 Students to be able to delete an Entry!\n");
 	}
 }
 bool SDB_ReadEntry(u32 id) { // to read a students info

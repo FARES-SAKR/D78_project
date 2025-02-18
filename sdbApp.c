@@ -22,6 +22,7 @@ void SDB_action(u8 choice) {
 	u32 id;
 	u32 idList[MAX];
 	u8 count;
+
 	switch (choice) {
 	case 1 :
 		SDB_AddEntry();
@@ -42,7 +43,7 @@ void SDB_action(u8 choice) {
 		}
 		else {
 			for (u8 i = 0; i < count; i++) {
-				printf("student %d : id = %d\n",i, idList[i]);
+				printf("student %d : id = %d\n",i+1, idList[i]);
 			}
 		}
 		break;	
