@@ -71,7 +71,7 @@ void SDB_DeleteEntry(u32 id) {
 
 	}
 	else { // no deletion happens if the database still smaller than 4
-		printf("Can't delete!");
+		printf("Can't delete!\n");
 		printf("The database must have more than 3 Students to be able to delete an Entry!\n");
 	}
 }
